@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="466.0" prefWidth="778.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ejej.HelloController">
+   <children>
+      <!-- Imagen del coche sin luces -->
+      <ImageView fx:id="carImage" fitHeight="504.0" fitWidth="777.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../coches/miniBlazingRed.png" />
+         </image>
+      </ImageView>
+
+      <!-- Imagen del coche con luces encendidas (inicialmente oculta) -->
+      <ImageView fx:id="carImageWithLights" fitHeight="504.0" fitWidth="777.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../img/autoLuz.png" />
+         </image>
+      </ImageView>
+
+      <Text fill="WHITE" layoutX="403.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CONFIGURA TU MINI COOPER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+
+      <!-- Colores del coche -->
+      <ImageView fitHeight="46.0" fitWidth="57.0" layoutX="22.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#changeToBlazingRed">
+         <image>
+            <Image url="@../../../colores/colorBlazingRed.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="57.0" layoutX="108.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#changeToElectricBlue">
+         <image>
+            <Image url="@../../../colores/colorElectricBlue.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="57.0" layoutX="201.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#changeToLapisluxuryBlue">
+         <image>
+            <Image url="@../../../colores/colorLapisluxuryBlue.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="299.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#changeToMidnightBlack">
+         <image>
+            <Image url="@../../../colores/colorMidnightBlack.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="484.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#changeToPepperWhite">
+         <image>
+            <Image url="@../../../colores/colorPepperWhite.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="57.0" layoutX="390.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#changeToMoonwalkGrey">
+         <image>
+            <Image url="@../../../colores/colorMoonwalkGrey.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="46.0" layoutX="581.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#changeToThunderGray">
+         <image>
+            <Image url="@../../../colores/colorThunderGray.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="46.0" fitWidth="59.0" layoutX="675.0" layoutY="396.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#changeToVolcaninOrange">
+         <image>
+            <Image url="@../../../colores/colorVolcaninOrange.jpg" />
+         </image>
+      </ImageView>
+
+      <!-- Logo del coche -->
+      <ImageView fitHeight="46.0" fitWidth="129.0" layoutX="131.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/cooperLogo.png" />
+         </image>
+      </ImageView>
+
+      <!-- Botón de luces "lucesOn" -->
+
+      <ImageView fx:id="lightsSwitch" fitHeight="29.0" fitWidth="28.0" layoutX="22.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#toggleLights">
+         <image>
+            <Image url="@../../../img/lucesOff.png" /> <!-- Imagen inicial de luces apagadas -->
+         </image>
+      </ImageView>
+
+      <Text fill="WHITE" layoutX="255.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONA TU COLOR FAVORITO " wrappingWidth="241.2738037109375">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
